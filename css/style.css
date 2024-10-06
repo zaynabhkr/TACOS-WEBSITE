@@ -1,0 +1,1171 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+/*Hours*/
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#001A23; /* Fallback color */
+  background-color: rgba(0, 26, 35,0.9); /* Black w/ opacity */
+  z-index:5;
+}
+.modal-content{
+
+  padding: auto;
+  margin: auto;
+justify-content: center;
+  display: block;
+  object-fit: cover;
+  
+  width: 800px;
+  height: 800px;
+ 
+}
+
+.close{
+cursor:pointer;
+  position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+/*animation for images*/
+.About-p {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.About_paragraph{
+  margin-top:20px;
+  margin:100px;
+  margin-bottom:50px;
+}
+#About{
+  background-color:#001A23;
+    padding:100px;
+    margin:0;
+    width:100vw;
+  
+    top:0;
+    left:0;
+    color:white;
+    opacity: 0; 
+  animation: fadeIn 1s ease-in-out forwards; 
+  animation-delay: 0.8s;
+}
+#AboutLTS h1{
+  text-align:center;
+  font-size:60px;
+  padding: 20px;
+  font-weight:600
+
+}
+.upper_images{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+}
+.upper_images img{
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+  margin:5px;
+
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 1s ease-in-out forwards; /* Use a fadeIn animation with 1 second duration */
+
+  /* Additional styles for animation */
+  animation-delay: 2s;
+  
+}
+
+#About-p{
+  opacity: 0; 
+  animation: fadeIn 1s ease-in-out forwards; 
+  animation-delay: 2.5s;
+}
+
+/*-----summary is clicked-----------*/
+
+.About_paragraph details:focus-within p
+{
+  background-color:#2765448f;
+  border-radius:40px;
+  padding:20px;
+  margin-top:15px;
+  font-weight:300;
+  
+}
+
+/* Style the drop down other half of body */
+.drop_down_menu {
+  margin-top:20px;
+  display:flex;
+  max-height:2000px;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+.address{
+  font-family:Fredoka;
+  margin:20px;
+}
+address i{
+  padding-left:10px;
+}
+.phone{
+  margin-top:30px;
+  text-decoration:none;
+  color:#127c42;
+}
+.phone:hover{
+
+  background-color:#578d703e;
+}
+
+.drop_down {
+cursor: pointer;
+  padding: 30px;
+  background-color: #276544;
+  border: 2px solid #173d29;
+  color:white;
+  font-family:Fredoka;
+  margin-bottom: 10px;
+  border-radius:30px;
+  width: 250px; 
+}
+.drop_down:focus{
+  width:250px;
+  outline: none; 
+}
+.map {
+height:70%;
+  border: 3px solid #bca900;
+  border-radius: 40px;
+  overflow: hidden; 
+}
+.content {
+  background-color:#fde979;
+  margin:10px;
+  height: 550px;
+  padding:30px;
+  border-radius:30px;
+}
+
+/* order now */
+#Dt{
+  font-size:20px;
+  width:100px;
+
+  border-radius:10px;
+  border: 1px #cdae00 solid;
+
+  font-family:Fredoka; /* Remove the border */
+  width: 100%;
+}
+select, .fill_in{
+  font-size:20px;
+  border-radius:10px;
+  border: 1px #cdae00 solid;
+  padding:10px;
+  background-color: #f7ed967f ;
+  color:black;
+  margin:5px;
+  margin-right:10px;
+}
+.Order {
+  text-decoration:none;
+  background-color:#5b9d75;
+  border: 1px #31493C solid;
+  color:white;
+  text-align:center;
+  display: block; 
+  width:150px;
+  padding:15px;
+  border-radius: 40px;
+  margin-top:20px;
+  position:relative;
+}
+.Order:hover{
+  background-color:#5b8066;
+}
+fieldset{
+  background-color:white;
+  padding:20px;
+  border:None;
+  border-radius:25px;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+
+
+#Beef:hover {opacity: 0.7;}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content0, #caption2 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.modal0 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#001A23; /* Fallback color */
+  background-color: rgba(0, 26, 35,0.9); /* Black w/ opacity */
+  z-index:5;
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption  {
+  margin: auto;
+  display: block;
+  width: 80%;
+  font-weight:100;
+  max-width: 700px;
+  text-align: center;
+  font-family:Fredoka;
+  color: #ffffff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption h3 { color: #97e1ac;
+  font-family:Fredoka; font-weight:100;}
+#caption p{ color:#ffffff;
+text-align:center;
+margin-right: 70px;
+margin-left: 70px;
+
+   white-space: wrap;
+}
+
+
+
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content0, #caption2 {
+  padding: auto;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  width: 800px;
+  height: 800px;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close0 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Chicken--------------------------------------------------*/
+
+
+#Chicken:hover {opacity: 0.7;}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#001A23; /* Fallback color */
+  background-color: rgba(0, 26, 35,0.9); /* Black w/ opacity */
+  z-index:5;
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  font-weight:100;
+  max-width: 700px;
+  text-align: center;
+  font-family:Fredoka;
+  color: #ffffff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption3 h3 { color: #97e1ac;
+  font-family:Fredoka; font-weight:100;}
+#caption3 p{ color:#ffffff;
+text-align:center;
+margin-right: 70px;
+margin-left: 70px;
+
+   white-space: wrap;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal2-content, #caption2 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Vegan----------------------------------------------------------------------------*/
+
+#Vegan {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+#Vegan:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#001A23; /* Fallback color */
+  background-color: rgba(0, 26, 35,0.9); /* Black w/ opacity */
+  z-index:5;
+}
+
+
+.modal3-content {
+  padding: auto;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  width: 800px;
+  height: 800px;
+ 
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  font-weight:100;
+  max-width: 700px;
+  text-align: center;
+  font-family:Fredoka;
+  color: #ffffff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption3 h3 { color: #97e1ac;
+  font-family:Fredoka; font-weight:100;}
+#caption3 p{ color:#ffffff;
+text-align:center;
+margin-right: 70px;
+margin-left: 70px;
+
+   white-space: wrap;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal3-content, #caption3 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*- Fish -------------------------------*/
+
+
+
+#Fish:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#001A23; /* Fallback color */
+  background-color: rgba(0, 26, 35,0.9); /* Black w/ opacity */
+  z-index:5;
+}
+
+
+.modal4-content {
+  padding: auto;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  width: 800px;
+  height: 800px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  font-weight:100;
+  max-width: 700px;
+  text-align: center;
+  font-family:Fredoka;
+  color: #ffffff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption4 h3 { color: #97e1ac;
+  font-family:Fredoka; font-weight:100;}
+#caption4 p{ color:#ffffff;
+text-align:center;
+margin-right: 70px;
+margin-left: 70px;
+
+   white-space: wrap;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal4-content, #caption4 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Shrimp ----------------------------- */
+
+
+
+
+
+#Shrimp:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:#001A23; /* Fallback color */
+  background-color: rgba(0, 26, 35,0.9); /* Black w/ opacity */
+  z-index:5;
+}
+
+
+.modal5-content {
+  padding: auto;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  width: 800px;
+  height: 800px;
+
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption5 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  font-weight:100;
+  max-width: 700px;
+  text-align: center;
+  font-family:Fredoka;
+  color: #ffffff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption5 h3 { color: #97e1ac;
+  font-family:Fredoka; font-weight:100;}
+#caption5 p{ color:#ffffff;
+text-align:center;
+margin-right: 70px;
+margin-left: 70px;
+
+   white-space: wrap;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal5-content, #caption4 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close5 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*---------------*/
+
+
+
+
+html {
+    font-size: 22px;
+    font-family:Fredoka; font-weight:100;;
+}
+/*footer*/
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #001A23;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  padding:0;
+}
+
+ul{
+  list-style: none;
+}
+.footer{
+ 
+  background-color: #001A23;
+    padding: 70px 0;
+}
+.footer-col{  
+  width: 50%;
+  padding: 0 15px;
+}
+h5, .footer-col h4 {
+  font-size: 20px;
+  color: #7fae8c;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+/*newsletter*/
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.661);
+
+}
+form {
+  position: relative;
+  background-color:white;
+  padding:5px 10px;
+
+}
+
+.top:hover {
+  background-color:#333;
+  color:#c8ffae;
+  text-decoration: none;
+  
+}
+.top:active{
+  background-color:#333;
+  color:#86c264;
+  text-decoration: none;
+}
+.top-a:visited { text-decoration: none; color:#001A23; }
+.top-a:focus { text-decoration: none; color:#001A23; }
+
+
+.top{
+  background-color:#B3EFB2;
+  color:#001A23;
+  font-size:15px;
+  text-decoration:none;
+  text-align:center;
+  border-radius: 15px;
+  margin-top:50px;
+  padding: 10px 10px;
+  width:150px;
+  font-weight:300;
+
+}
+svg {
+  margin: 0.5rem;
+}
+.form-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 347px);
+  border-bottom: 1px solid va black;
+}
+form {
+  position: relative;
+}
+
+button {
+  appearance: none;
+  border: 0;
+
+  background: transparent;
+}
+
+
+input {
+  padding: 10px 0;
+  border: none;
+  background: none;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-family:Fredoka; font-weight:100;;
+  font-size: 15px;
+  padding:10px 5px;
+  color:black;
+  
+}
+
+
+/* add a line below h4*/
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #f3ffb7;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+
+.footer-col ul li a{
+  margin-right:20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: rgb(204, 204, 204);
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+/*header*/
+
+.primary_nav {
+  max-width: 100vw;
+  background-color: #001A23;
+  padding: 10px 10px;
+  position:relative;
+  z-index:4;
+}
+.active {
+  background-color:#3f59a7;
+}
+
+
+
+header nav .logo-container {
+float: left;
+margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.primary_nav a {
+  color: #E8F1F2;
+  text-align: center;
+  margin:5px;
+  text-decoration: none;
+  font-size: 18px; 
+  padding: 14px 16px;
+  line-height: 25px;
+  border-radius: 4px;
+  float:right;
+
+}
+
+header nav img{
+  float:left;
+}
+
+header nav ul a:hover {
+  background-color:#86c264;
+  color:#ffffff;
+}
+.logo{
+position:relative;
+  float:left;
+  font-size: 25px;
+  font-weight: 300;
+}
+.logo-img{
+padding-left:10px
+}
+@media screen and (max-width: 950px) {
+  nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+    #title-1,
+    #title-2 {
+        font-size: 80px; /* Adjust font size for smaller screens */
+    }
+
+    .upper_images img{
+      width:200px;
+      height:200px;
+      
+    }
+    .About_paragraph {
+      
+      margin:40px;
+    }
+
+  
+}
+
+/*body---------------------*/
+
+
+.primary_nav{
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%}
+
+
+/*adding my own font*/
+@font-face {
+  font-family: Fredoka;
+  src: url('../Fredoka.ttf');
+}
+
+.header-image {
+  top:0;
+  background-image: url("../images/header_image.png");
+  width: 100%;
+  height:700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  text-align: right; 
+}
+
+
+
+
+#first_row {
+padding:  20px 30px;
+
+background-color:#7fae8c;
+color:#24262b;
+}
+
+
+
+@media(max-width: 767px){
+.footer-col{
+  width: 50%;
+  margin-bottom: 30px;
+  
+}
+
+}
+@media(max-width: 574px){
+.footer-col{
+  width: 100%;
+}
+}
+
+.primary_nav {
+  font-weight:450;
+  max-width: 100vw;
+  background-color: #001A23;
+  padding: 10px 10px;
+  position:relative;
+  z-index:4;
+}
+.active {
+  background-color:#3f59a7;
+}
+
+
+
+header nav .logo-container {
+float: left;
+margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.primary_nav a {
+  font-weight:450;
+
+  color: #E8F1F2;
+  text-align: center;
+  margin:5px;
+  text-decoration: none;
+  font-size: 18px; 
+  padding: 14px 16px;
+  line-height: 25px;
+  border-radius: 4px;
+  float:right;
+
+}
+
+header nav img{
+  float:left;
+}
+
+header nav ul a:hover {
+  background-color:#86c264;
+  color:#ffffff;
+}
+.logo{
+position:relative;
+  float:left;
+  font-size: 25px;
+  font-weight: 300;
+}
+.logo-img{
+padding-left:10px
+}
+@media screen and (max-width: 880px) {
+  nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+    #title-1,
+    #title-2 {
+        font-size: 80px; /* Adjust font size for smaller screens */
+    }
+
+    .upper_images img{
+      width:200px;
+      height:200px;
+      
+    }
+  
+}
+
+/*body---------------------*/
+body {
+background-color:lightyellow;
+margin: 0;
+}
+.primary_nav{
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%}
+
+
+/*adding my own font*/
+@font-face {
+  font-family: Fredoka;
+  src: url('../Fredoka.ttf');
+}
+
+.header-image {
+  top:0;
+  background-image: url("../images/header_image.png");
+  width: 100%;
+  height:700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  text-align: right; 
+}
+
+table{
+  margin-left:50px;
+}
+
+.table-caption {
+  border: 1px solid #31493C;
+  background-color:#3a7356;
+  text-align: center;
+  font-family:Fredoka;
+  color:white;
+  border-collapse: separate;
+  font-weight:500;
+ 
+}
+tr, th {
+
+padding:  20px 70px;
+margin: 0 auto;
+background-color:white;
+border: 1px solid #31493C;
+text-align:center;
+}
+th {
+  font-weight:600;
+}
+td{
+border: 1px solid #31493C;
+font-weight:400;
+
+}
+
+#first_row {
+padding:  20px 30px;
+
+background-color:#7fae8c;
+color:#24262b;
+}
+
+
+
+@media(max-width: 767px){
+.footer-col{
+  width: 50%;
+  margin-bottom: 30px;
+  
+}
+
+}
+@media(max-width: 574px){
+.footer-col{
+  width: 100%;
+}
+}
+
+
+/*body*/
+.title-menu{
+  text-align:center;
+  font-size:60px;
+  padding: 20px;
+}
+div.scroll-container {
+margin-bottom:150px;
+margin-top:30px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  background-color: white;
+  padding: 10px;
+  white-space: nowrap;
+  padding-bottom:30px;
+  padding-top:30px;
+  position: relative; 
+}
+
+#Beef, #Chicken, #Vegan, #Fish, #Shrimp {
+  
+  padding: 20px;
+  object-fit: cover; border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: bottom; /* Ensure stacking context */
+  z-index: -1;
+
+}
+
+#Beef:hover, #Chicken:hover, #Vegan:hover, #Fish:hover, #Shrimp:hover {
+  padding: 20px;
+  opacity:0.7;
+  position: bottom; 
+  z-index: -2;
+}
+
+
+div.scroll-container figure {
+  flex: 0 0 auto;
+  margin: 0;
+ 
+  
+}
+.title-img{
+  color:#31493C;
+  font-weight:600;
+  text-align: center;
+  font-size:30px;
+}
+.price{
+  background-color:#fde979;
+  text-align:center;
+  display: block; 
+  width:250px;
+  margin-top:10px;
+  margin-left: 15%;
+  padding:5px;
+  font-weight:600;
+  border-radius: 40px;
+}
