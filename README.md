@@ -9,7 +9,7 @@ Welcome to The Little Taco Shop! This is a front-end web application showcasing 
 - Our Menu: A beautifully designed menu featuring a variety of tacos with images and prices.
 - Cart: A section for users to manage their orders.
 
-## Technologies Used
+## Languages Used
 
 - HTML: For structuring the content and layout.
 - CSS: For styling and visual enhancements.
