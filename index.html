@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Zaynab Corporate" />
+    <meta
+      name="description"
+      content="Our tacos shop The Little taco Shop offer the best kind of tacos in our town"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Little Taco Shop</title>
+    
+    <link rel="icon" href="favicon.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+  </head>
+
+  <body>
+    <header class="header-image">
+      <nav class="primary_nav" aria-label="primary-navigation">
+        <img src="truck.png" alt="LTS logo"  class="logo-img" />
+        <div class="logo-container">
+        <a href="#AboutLTS" class="logo">The Little Taco Shop</a>
+        </div>
+        <ul class=".header-right">
+          <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+          <li><a href="#Menu">Our Menu</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#" id="hoursLink">Hours</a></li>
+
+          
+        </ul>
+      </nav>
+      
+    </header>
+
+    <!-- Hours of LTS-->
+      <div id="hoursModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          
+            
+            <table>
+              
+              <thead>
+                <th colspan="3" class="table-caption">Store Hours</th>
+                <tr>
+                  <th id="first_row">Days</th>
+                  <th>Opening Hours</th>
+                  <th>Closing Hours</th>
+                </tr>
+      
+              <tbody>
+                <tr>
+                  <td id="first_row">Monday</td>
+                  <td><time datetime="10:00">10:00 AM</time></td>
+                  <td><time datetime="20:00">8:00 PM</time></td>
+                </tr>
+      
+                <tr>
+                  <td id="first_row">Tuesday</td>
+                  <td><time datetime="10:00">10:00 AM</time></td>
+                  <td><time datetime="20:00">8:00 PM</time></td>
+                </tr>
+      
+                <tr>
+                  <td id="first_row">Wednesday</td>
+                  <td><time datetime="10:00">10:00 AM</time></td>
+                  <td><time datetime="20:00">8:00 PM</time></td>
+                </tr>
+      
+                <tr>
+                  <td id="first_row">Thursday</td>
+                  <td><time datetime="10:00">10:00 AM</time></td>
+                  <td><time datetime="20:00">8:00 PM</time></td>
+                </tr>
+      
+                <tr>
+                  <td id="first_row">Friday</td>
+                  <td><time datetime="10:00">10:00 AM</time></td>
+                  <td><time datetime="20:00">8:00 PM</time></td>
+                </tr>
+      
+                <tr>
+                  <td id="first_row">Saturday</td>
+                  <td><time datetime="11:00">11:00 AM</time></td>
+                  <td><time datetime="21:00">9:00 PM</time></td>
+                </tr>
+      
+                <tr>
+                  <td id="first_row">Saturday</td>
+                  <td><time datetime="11:00">11:00 AM</time></td>
+                  <td><time datetime="21:00">9:00 PM</time></td>
+                </tr>
+              </tbody>
+              </thead>
+
+            </table>
+            
+        </div>
+    </div>
+    <script>
+      // Script for the hours pop-up
+      var hoursModal = document.getElementById("hoursModal");
+      var hoursLink = document.getElementById("hoursLink");
+      var closeBtns = document.getElementsByClassName("close");
+
+      hoursLink.onclick = function () {
+          hoursModal.style.display = "block";
+      };
+    
+    
+      for (var i = 0; i < closeBtns.length; i++) {
+        closeBtns[i].onclick = function () {
+            hoursModal.style.display = "none";
+        };
+    }
+    
+    </script>
+
+    <main>
+      
+      <article id="AboutLTS">
+        
+        <h1>About Us</h1>
+      <div id="About">
+        <div class="upper_images">
+        <img src="images/designs/employee.png" alt="LTS employee">
+        <img src="images/designs/store.png" alt="LTS store">
+        <img src="images/designs/taco.png" alt="LTS taco">
+      </div>
+      <div class="About_paragraph">
+        <h2>Welcome to <abbr title="Little Taco Shop">LTS</abbr> !</h2>
+        
+        <p class="About-p">
+          <abbr title="Little Taco Shop">LTS</abbr> was founded in
+          <time datetime="2022">2022</time>. Our shop was built from a
+          <strong style="font-weight:600;">love of tacos</strong> &#127790;. 
+         LTS is a culinary haven born out of a genuine love for tacos, crafted with devotion and served with a side of community spirit. Nestled in the heart of our charming town, we take pride in adding a unique and delightful touch to our community's culinary landscape.
+        </p>
+   
+        
+  
+        <aside>
+          <h3 style="color:#fde979;padding-bottom:10px;font-weight:600;">Taco Trivia</h3>
+          <details>
+            
+            <summary>When did tacos first appear in the United States?</summary>
+            <p>
+              Jeffrey M. Pulcher, taco historian and professor of history at the
+              University of Minnesota, says the earliest mention of tacos in the
+              United States are in the newspaper from
+              <time datetime="1905">1905</time> (Source =
+              <cite
+                ><a
+                  href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
+                  target="_blank" style="text-decoration:None;color:#fff7cc;"
+                  >Smithsomian Magazine</a
+                >)</cite>.
+            </p>
+          </details>
+        </aside>
+      </div>
+      </div>
+      </article>
+
+      <article id="Menu">
+        <h2 class="title-menu">Our Menu</h2>
+        <div class="drop_down_menu">
+          <!--Table of hours opening & Closing-->
+  
+        <section id="Directions">
+          <details>
+            <summary class= "drop_down" onclick="toggleSection('directionsContent')">Directions</summary>
+            <div class="content" id="directionsContent">
+            <div class="address">
+          <p class="address"><address><i style='font-size:24px;color:#001a23;' class='fas'>&#xf124;</i>  2605 Blaine St, Caldwell, ID 83605<br>
+            <i style='font-size:24px;color:#001a23;' class='fas'>&#xf095;</i><a href="tel:+13854731051" class="phone">  (385) 473-1051</a>
+          </address></p>
+          </div>
+          <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11547.357282254885!2d-116.67691465635988!3d43.65151124567783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf1582ff01917%3A0x3e6041e601e474af!2sTaco%20Time!5e0!3m2!1sen!2sus!4v1706914980850!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      
+      </div>
+    </details>
+        </section>
+          
+        <section id="Delivery_Takeout">
+          <details>
+            <summary class= "drop_down" onclick="toggleSection('deliveryTakeoutContent')">Order Now</summary>
+            <div class="content" id="deliveryTakeoutContent" >
+            <fieldset class="form_style">
+            <select name="Dt" id="Dt">
+              <option value="Delivery">Delivery</option>
+              <option value="Pick up">Pickup</option>
+            </select>
+            <input type="time" class="fill_in" max="21:00" min="09:00" name="deliverytime"/>
+            <input type="text" class="fill_in" placeholder="Location of delivery" id="deliveryLocation" >
+          </fieldset>
+            <a href="" class="Order">Go to Cart</a>
+            <img src="../images/taco_deco.png" alt="Taco-icon" width="230px" style="float:right;">
+          </div>
+        </details>
+  
+       </section>
+  
+          <script>
+            function toggleSection(sectionId) {
+              const section = document.getElementById(sectionId);
+              section.style.display = (section.style.display === 'none' || section.style.display === '') ? 'block' : 'none';
+            }
+          </script>
+      </div>  
+        <!--menu gallery-->
+<div class="scroll-container">
+          <figure>
+           <img id="Beef" src="images/tacos/beef-original.jpg" alt="Beef Original" width="500px" height="400px">
+          <h4 class="title-img">Classic Beef Taco</h4>
+          <h3 class="price">Price: $3.99</h3>
+        </figure>
+
+      <div id="myModal" class="modal0">
+
+        <!-- The Close Button -->
+        <span class="close0">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content0" id="imgBeef" src="images/ingredients/1.png">
+      
+        <div id="caption"></div>
+
+      </div>
+      
+      <script>
+        var modal0 = document.getElementById("myModal");
+    var img = document.getElementById("Beef");
+    var modalImg = document.getElementById("imgBeef");
+    var captionText = document.getElementById("caption");
+    var span = document.getElementsByClassName("close0")[0];
+
+    img.onclick = function(){
+      modal0.style.display = "block";
+      modalImg.src = "images/ingredients/1.png";
+      captionText.innerHTML = "";
+      // Additional caption or description can be added here if needed
+    }
+
+    span.onclick = function() {
+      modal0.style.display = "none";
+    }
+</script>
+
+
+
+
+
+        <figure>
+          <img id="Chicken" src="images/tacos/chicken-tacos.jpg" alt="Chicken tacos" width="500px" height="400px" >
+          <h4 class="title-img">Grilled Chicken Fiesta Taco</h4>
+          <h3 class="price">Price: $4.49</h3>
+        </figure>
+
+        <div id="myModal2" class="modal2">
+
+          <!-- The Close Button -->
+          <span class="close2">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal2-content" id="imgChicken">
+        
+          <div id="caption2"></div>
+  
+        </div>
+
+        <script>
+          var modal = document.getElementById("myModal2");
+      var img = document.getElementById("Chicken");
+      var modalImg = document.getElementById("imgChicken");
+      var captionText = document.getElementById("caption2");
+      var span = document.getElementsByClassName("close2")[0];
+  
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = "images/ingredients/2.png";
+        captionText.innerHTML = "";
+        // Additional caption or description can be added here if needed
+      }
+  
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+  </script>
+       
+
+
+        <figure>
+          <img id="Vegan" src="images/tacos/vegan-tacos.jpg" alt="Vegetarian Tacos" width="500px" height="400px">
+          <h4 class="title-img">Vegetarian Taco</h4>
+          <h3 class="price">Price: $3.99</h3>
+        </figure>
+
+        <div id="myModal3" class="modal3">
+
+          <!-- The Close Button -->
+          <span class="close3">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal3-content" id="imgVegan">
+        
+          <div id="caption3"></div>
+  
+        </div>
+
+        <script>
+           var modal = document.getElementById("myModal3");
+      var img = document.getElementById("Vegan");
+      var modalImg = document.getElementById("imgVegan");
+      var captionText = document.getElementById("caption3");
+      var span = document.getElementsByClassName("close3")[0];
+  
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = "images/ingredients/3.png";
+        captionText.innerHTML = "";
+        // Additional caption or description can be added here if needed
+      }
+  
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+        </script>
+
+
+
+        <figure>
+          <img id="Fish"  src="images/tacos/fish-tacos.jpg" alt="Baja Fish Tacos" width="500px" height="400px">
+          <h4 class="title-img">Baja Fish Tacos</h4>
+          <h3 class="price">Price: $3.79</h3>
+        </figure>
+
+        <div id="myModal4" class="modal4">
+
+          <!-- The Close Button -->
+          <span class="close4">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal4-content" id="imgFish">
+        
+          <div id="caption4"></div>
+  
+        </div>
+
+        <script>
+             var modal = document.getElementById("myModal4");
+      var img = document.getElementById("Fish");
+      var modalImg = document.getElementById("imgFish");
+      var captionText = document.getElementById("caption4");
+      var span = document.getElementsByClassName("close4")[0];
+  
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = "images/ingredients/4.png";
+        captionText.innerHTML = "";
+        // Additional caption or description can be added here if needed
+      }
+  
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+        </script>
+
+        <figure>
+          <img id ="Shrimp" src="images/tacos/shrimp tacos.jpg" alt="Shrimp Tacos" width="500px" height="400px"> 
+          <h4 class="title-img">Shrimp Taco</h4>
+          <h3 class="price">Price: $4.99</h3>
+        </figure>
+        </div>
+
+        <div id="myModal5" class="modal5">
+
+          <!-- The Close Button -->
+          <span class="close5">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal5-content" id="imgShrimp">
+        
+          <div id="caption5"></div>
+  
+        </div>
+        <script>
+             var modal = document.getElementById("myModal5");
+      var img = document.getElementById("Shrimp");
+      var modalImg = document.getElementById("imgShrimp");
+      var captionText = document.getElementById("caption5");
+      var span = document.getElementsByClassName("close5")[0];
+  
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = "images/ingredients/5.png";
+        captionText.innerHTML = "";
+        // Additional caption or description can be added here if needed
+      }
+  
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+        </script>
+
+ 
+</article>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>The Little Taco Shop</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#Menu">Menu</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="top">
+            <a href="#" style="text-decoration: none" class="top-a">Back to Top</a>
+            </div>
+          </div>
+
+
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="newsletter">
+            <h5 > Be part of our newsletter!</h5>
+            
+            
+            <form class="form-cta" action="https://httpbin.org/get">
+              <input type="text" id="input-text" placeholder="Email Address" >
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                </svg>
+              </button>
+            
+            </form>
+          
+        </div>
+        
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>

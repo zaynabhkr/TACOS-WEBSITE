@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style_cart.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        </script>
+    </head>
+    <body>
+        <header class="header-image">
+            <nav class="primary_nav" aria-label="primary-navigation">
+            <div class="left_section">
+                <div class="logo-container">
+              <img src="truck.png" alt="LTS logo"  /></div>
+              <div class="logo-container">
+              <a href="#AboutLTS" class="logo_LTS">The Little Taco Shop</a>
+              </div>
+            </div>
+              <div class="header-right"> 
+                
+          
+                <div class="elt-header"><a href="#" id="hoursLink">Hours</a></li></div>
+
+                <div class="elt-header" ><a href="contact.html">Contact us</div>
+                  <div class="elt-header"><a href="index.html#Menu">Our Menu</a></div>
+                  <div class="elt-header" id="active" ><a href="cart.html" ><i class="fa fa-shopping-cart"></i></a></div>
+      
+              </div>
+            </nav>
+         <br>   
+          </header>
+          <div id="hoursModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              
+                
+                <table>
+                  
+                  <thead>
+                    <th colspan="3" class="table-caption">Store Hours</th>
+                    <tr>
+                      <th id="first_row">Days</th>
+                      <th>Opening Hours</th>
+                      <th>Closing Hours</th>
+                    </tr>
+          
+                  <tbody>
+                    <tr>
+                      <td id="first_row">Monday</td>
+                      <td><time datetime="10:00">10:00 AM</time></td>
+                      <td><time datetime="20:00">8:00 PM</time></td>
+                    </tr>
+          
+                    <tr>
+                      <td id="first_row">Tuesday</td>
+                      <td><time datetime="10:00">10:00 AM</time></td>
+                      <td><time datetime="20:00">8:00 PM</time></td>
+                    </tr>
+          
+                    <tr>
+                      <td id="first_row">Wednesday</td>
+                      <td><time datetime="10:00">10:00 AM</time></td>
+                      <td><time datetime="20:00">8:00 PM</time></td>
+                    </tr>
+          
+                    <tr>
+                      <td id="first_row">Thursday</td>
+                      <td><time datetime="10:00">10:00 AM</time></td>
+                      <td><time datetime="20:00">8:00 PM</time></td>
+                    </tr>
+          
+                    <tr>
+                      <td id="first_row">Friday</td>
+                      <td><time datetime="10:00">10:00 AM</time></td>
+                      <td><time datetime="20:00">8:00 PM</time></td>
+                    </tr>
+          
+                    <tr>
+                      <td id="first_row">Saturday</td>
+                      <td><time datetime="11:00">11:00 AM</time></td>
+                      <td><time datetime="21:00">9:00 PM</time></td>
+                    </tr>
+          
+                    <tr>
+                      <td id="first_row">Saturday</td>
+                      <td><time datetime="11:00">11:00 AM</time></td>
+                      <td><time datetime="21:00">9:00 PM</time></td>
+                    </tr>
+                  </tbody>
+                  </thead>
+    
+                </table>
+                
+            </div>
+        </div>
+        <script>
+            var hoursModal;
+      var hoursLink;
+      var closeBtns;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        hoursModal = document.getElementById("hoursModal");
+        hoursLink = document.getElementById("hoursLink");
+        closeBtns = document.getElementsByClassName("close");
+
+        hoursLink.onclick = function () {
+          hoursModal.style.display = "block";
+        };
+
+        for (var i = 0; i < closeBtns.length; i++) {
+          closeBtns[i].onclick = function () {
+            hoursModal.style.display = "none";
+          };
+        }
+      });
+          </script>
+<main>
+        <div class="header_main">
+            <p class="logo">Your Cart</p>
+            <div class="cart">
+                <i class="material-icons">shopping_cart</i>
+                <p id="count">0</p>
+            </div>
+        </div>
+        <div class="Container">
+            <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head"><p>My Cart</p></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">$ 0.00</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+
+
+
+const product = [
+   {
+       id: 0,
+       image: 'images/tacos/beef-original.jpg',
+       title: 'Beef Original Taco',
+       price: 120,
+   },
+   {
+       id: 1,
+       image: 'images/tacos/Chicken-tacos.jpg',
+       title: 'Grilled Chicken Tacos',
+       price: 60,
+   },
+   {
+       id: 2,
+       image: 'images/tacos/fish-tacos.jpg',
+       title: 'Baja Fish Tacos',
+       price: 230,
+   },
+   {
+       id: 3,
+       image: 'images/tacos/shrimp-tacos.jpg',
+       title: 'Shrimp tacos',
+       price: 100,
+   },
+   {
+   id: 3,
+   image: 'images/tacos/vegan-tacos.jpg',
+   title: 'Vegetarian tacos',
+   price: 100,
+}
+];
+const categories = [...new Set(product.map((item) => item))];
+      let i = 0;
+
+      document.getElementById('root').innerHTML = categories
+        .map((item) => {
+          var { image, title, price } = item;
+          return (
+            `<div class='box'>
+                <div class='img-box'>
+                    <img class='images' src=${image}></img>
+                </div>
+                <div class='bottom'>
+                    <p>${title}</p>
+                    <h2>$ ${price}.00</h2>` +
+            "<button onclick='addtocart(" + (i++) + ")'>Add to cart</button>" +
+            `</div>
+            </div>`
+          );
+        })
+        .join('');
+
+      var cart = [];
+
+      function addtocart(a) {
+        cart.push({ ...categories[a] });
+        displaycart();
+      }
+
+      function delElement(a) {
+        cart.splice(a, 1);
+        displaycart();
+      }
+
+      function displaycart() {
+        let j = 0,
+          total = 0;
+        document.getElementById('count').innerHTML = cart.length;
+        if (cart.length == 0) {
+          document.getElementById('cartItem').innerHTML = 'Your cart is empty';
+          document.getElementById('total').innerHTML = '$ ' + 0 + '.00';
+        } else {
+          document.getElementById('cartItem').innerHTML = cart
+            .map((items) => {
+              var { image, title, price } = items;
+              total = total + price;
+              document.getElementById('total').innerHTML = '$ ' + total + '.00';
+              return (
+                `<div class='cart-item'>
+                    <div class='row-img'>
+                        <img class='rowimg' src=${image}>
+                    </div>
+                    <p style='font-size:14px;'>${title}</p>
+                    <h2 style='font-size: 15px;'>$ ${price}.00</h2>` +
+                "<i class='fa fa-trash' onclick='delElement(" + (j++) + ")'></i></div>"
+              );
+            })
+            .join('');
+        }
+      }
+        </script>
+    </body>
+</html>

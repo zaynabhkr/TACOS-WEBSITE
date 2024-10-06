@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="author" content="Zaynab El Hakour" />
+    <meta name="description" content="This page will lead you to contact me." />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Fredoka" />
+    <link rel="stylesheet" href="css/style_contact.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Contact Me</title>
+
+    <link rel="icon" href="favicon.ico" type="images/x-icon" />
+  </head>
+  <body>
+    <header class="header-image">
+      <nav class="primary_nav" aria-label="primary-navigation">
+      <div class="left_section">
+          <div class="logo-container">
+        <img src="truck.png" alt="LTS logo"  /></div>
+        <div class="logo-container">
+        <a href="#AboutLTS" class="logo_LTS">The Little Taco Shop</a>
+        </div>
+      </div>
+        <div class="header-right">
+          <div class="elt-header"><a href="#" id="hoursLink">Hours</a></li></div>
+
+          <div class="elt-header" id="active"><a href="contact.html">Contact us</div>
+            <div class="elt-header"><a href="index.html#Menu">Our Menu</a></div>
+            <div class="elt-header" ><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></div>
+
+    
+        </div>
+      </nav>
+   <br> 
+     
+    </header>
+    <div id="hoursModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        
+          
+          <table>
+            
+            <thead>
+              <th colspan="3" class="table-caption">Store Hours</th>
+              <tr>
+                <th id="first_row">Days</th>
+                <th>Opening Hours</th>
+                <th>Closing Hours</th>
+              </tr>
+    
+            <tbody>
+              <tr>
+                <td id="first_row">Monday</td>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="20:00">8:00 PM</time></td>
+              </tr>
+    
+              <tr>
+                <td id="first_row">Tuesday</td>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="20:00">8:00 PM</time></td>
+              </tr>
+    
+              <tr>
+                <td id="first_row">Wednesday</td>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="20:00">8:00 PM</time></td>
+              </tr>
+    
+              <tr>
+                <td id="first_row">Thursday</td>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="20:00">8:00 PM</time></td>
+              </tr>
+    
+              <tr>
+                <td id="first_row">Friday</td>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="20:00">8:00 PM</time></td>
+              </tr>
+    
+              <tr>
+                <td id="first_row">Saturday</td>
+                <td><time datetime="11:00">11:00 AM</time></td>
+                <td><time datetime="21:00">9:00 PM</time></td>
+              </tr>
+    
+              <tr>
+                <td id="first_row">Saturday</td>
+                <td><time datetime="11:00">11:00 AM</time></td>
+                <td><time datetime="21:00">9:00 PM</time></td>
+              </tr>
+            </tbody>
+            </thead>
+
+          </table>
+          
+      </div>
+  </div>
+  
+  <script>
+    // Script for the hours pop-up
+    var hoursModal = document.getElementById("hoursModal");
+    var hoursLink = document.getElementById("hoursLink");
+    var closeBtns = document.getElementsByClassName("close");
+
+    hoursLink.onclick = function () {
+        hoursModal.style.display = "block";
+    };
+  
+  
+    for (var i = 0; i < closeBtns.length; i++) {
+      closeBtns[i].onclick = function () {
+          hoursModal.style.display = "none";
+      };
+  }
+  
+  </script>
+    <main>
+      <article id="ContactForm">
+      <div class="box">
+        <div class="content">
+          <form id="form">
+          <div class="content-header">
+            <h2>CONTACT US</h2>
+          </div>
+          <div class="input_container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required>
+          </div>
+          <div class="input_container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input_container">
+            <label for="message">Message</label>
+            <textarea id="message" name="sth" rows="5" cols="33"></textarea>
+          </div>
+          <button class="button-ctf" >Submit</button>
+        </form>
+        </div>
+      </div>
+    </article>
+    </main>
+
+
+
+
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>The Little Taco Shop</h4>
+              <ul>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="index.html/#Menu">Our Menu</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+              <div class="top">
+              <a href="#" style="text-decoration: none" class="top-a">Back to Top</a>
+              </div>
+            </div>
+  
+  
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="newsletter">
+              <h5 class="newsletter-header"> Be part of our newsletter!</h5>
+              <form class="form-cta" action="https://httpbin.org/get">
+               
+                <div class="newsletter_content">
+                  <input class="form-input" type="text" placeholder="Email Address">
+                <button class="button-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </footer>
+  </body>
+</html>
